@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Parallax Scrolling Website</title>
+    <title>Yuncheol's profile</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
-        <ul>
+        <ul class="links">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
+            <li><a href= "https://yundobi.github.io/Rock-Paper-Scissor/">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
     <section>
         <img src="image/stars.png" id="stars">
@@ -78,6 +83,7 @@
             suri looks not fat but actually really fat.
         </p>
     </div>
+
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
@@ -86,6 +92,7 @@
         let text = document.getElementById('text');
         let bth = document.getElementById('bth'); 
         let header = document.querySelector('header');
+        
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
@@ -97,8 +104,9 @@
             text.style.marginTop = value * 0.6 +'px';
             bth.style.marginTop = value * 1.5 +'px';
             header.style.top = value * 0.5 + 'px';
-        })
+        });
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
  
